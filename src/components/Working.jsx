@@ -5,10 +5,10 @@ export default function Working() {
 
       <div className="grid md:grid-cols-4 gap-4">
 
-        <div className="bg-green-100 px-6 py-4 rounded-xl">1. Waste Detected</div>
-        <div className="bg-green-100 px-6 py-4 rounded-xl">2. AI Classifies Waste</div>
-        <div className="bg-green-100 px-6 py-4 rounded-xl">3. Auto Pickup Scheduled</div>
-        <div className="bg-green-100 px-6 py-4 rounded-xl">4. Recycled or Disposed</div>
+        <div className="bg-green-500 px-6 py-4 rounded-xl">1. Waste Detected</div>
+        <div className="bg-green-500 px-6 py-4 rounded-xl">2. AI Classifies Waste</div>
+        <div className="bg-green-500 px-6 py-4 rounded-xl">3. Auto Pickup Scheduled</div>
+        <div className="bg-green-500 px-6 py-4 rounded-xl">4. Recycled or Disposed</div>
 
       </div>
     </section>
