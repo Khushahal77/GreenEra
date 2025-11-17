@@ -5,23 +5,23 @@ export default function Services() {
 
       <div className="grid md:grid-cols-3 gap-8">
         
-        <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+        <div className="bg-green-500 p-6 rounded-xl shadow-md hover:shadow-xl transition">
           <h3 className="text-xl font-bold mb-2">Smart Waste Tracking</h3>
-          <p className="text-gray-600">
+          <p className="text-black">
             Track bin levels using sensors and AI.
           </p>
         </div>
 
-        <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+        <div className="bg-green-500 p-6 rounded-xl shadow-md hover:shadow-xl transition">
           <h3 className="text-xl font-bold mb-2">AI Waste Segregation</h3>
-          <p className="text-gray-600">
+          <p className="text-black">
             Classify dry/wet waste automatically.
           </p>
         </div>
 
-        <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
+        <div className="bg-green-500 p-6 rounded-xl shadow-md hover:shadow-xl transition">
           <h3 className="text-xl font-bold mb-2">Recycling Marketplace</h3>
-          <p className="text-gray-600">
+          <p className="text-black">
             Connect households with recyclers.
           </p>
         </div>
