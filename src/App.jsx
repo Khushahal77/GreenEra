@@ -1,26 +1,32 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Services from "./components/Services";
-import Working from "./components/Working";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
-import MainLayout from "./layouts/MainLayout";
 import HomeContent from "./pages/HomeContent";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
+import ProtectedRoute from "./components/ProtectedRoute";
+import Navbar from "./components/Navbar";
+import "./index.css";
+import Signup from "./pages/Signup";
 
-
-export default function App() {
+function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<MainLayout />}>
-          <Route index element={<HomeContent />} />
-          <Route path="login" element={<Login modal={true} />} />
-        </Route>
+        <Route path="/" element={<HomeContent />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
 }
+
+export default App;
