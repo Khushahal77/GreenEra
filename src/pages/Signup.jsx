@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { registerWithEmail } from "../firebase/firebaseConfig";
+import { signupWithEmail } from "../firebase/firebaseConfig";
 
 export default function Signup() {
   const [email, setEmail] = useState("");
@@ -9,7 +9,7 @@ export default function Signup() {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      await registerWithEmail(email, password);
+await signupWithEmail(email, password)
       alert("Account created successfully!");
       window.location.href = "/dashboard"; // redirect after signup
     } catch (err) {

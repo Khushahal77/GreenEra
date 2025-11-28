@@ -1,15 +1,16 @@
 import Navbar from "../components/Navbar";
-import { Outlet } from "react-router-dom";
+import Footer from "../components/Footer";
 
-export default function MainLayout() {
+export default function MainLayout({ children }) {
   return (
-    <>
+    <div className="min-h-screen flex flex-col dark:bg-gray-900 dark:text-white">
       <Navbar />
 
-      {/* Add top padding to prevent the fixed navbar from covering content */}
-      <main style={{ paddingTop: 72 }}>
-        <Outlet />
+      <main className="flex-1">
+        {children}
       </main>
-    </>
+
+      <Footer />
+    </div>
   );
 }

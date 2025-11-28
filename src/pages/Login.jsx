@@ -141,13 +141,16 @@ export default function Login({ modal = false }) {
     );
   }
 
-  // 🌿 Full Page Login
+  // 🌿 Full Page Login — keep image natural, use a light translucent overlay instead of opaque white
   return (
     <div
       className="min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat relative"
       style={{ backgroundImage: "url('/tree.jpg')" }}
     >
-      <div className="absolute inset-0 bg-white/75"></div>
+      <div
+        className="absolute inset-0"
+        style={{ backgroundColor: 'rgba(255,255,255,0.12)' }}
+      ></div>
       {card}
     </div>
   );

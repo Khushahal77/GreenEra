@@ -24,17 +24,17 @@ export default function Hero() {
           width: "100%",
           height: "100%",
           objectFit: "cover",
-          filter: "brightness(0.62) saturate(1.15) contrast(1.05)",
+          filter: "none",
           zIndex: 0
         }}
       />
 
-      {/* Dark/green tint overlay to improve contrast and color tone */}
+      {/* Subtle overlay to keep text readable but preserve natural colors */}
       <div
         style={{
           position: "absolute",
           inset: 0,
-          background: "linear-gradient(rgba(6,95,70,0.25), rgba(3,63,44,0.25))",
+          background: "linear-gradient(rgba(6,95,70,0.08), rgba(3,63,44,0.08))",
           zIndex: 1
         }}
       ></div>
